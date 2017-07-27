@@ -1,0 +1,171 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Landscaping</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+                                                         <link rel="stylesheet" href="landscaping_files/css.htm">
+
+    
+
+    <style>
+        /* latin */
+@font-face {
+  font-family: 'Artifika';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Artifika Medium'), local('Artifika-Medium'), url(https://fonts.gstatic.com/s/artifika/v6/KUmbsEUmwZBks8S_dFROo_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+body {
+            margin: 0;
+            width: 100%;
+            font-family: 'Artifika', sans-serif;
+            color: #aabd94;
+            background: linear-gradient(#4b6634, #101b0c);
+        }
+
+        .top-bar {
+            height: 90px;
+            background: linear-gradient(#49573a, #17260b);
+            font-weight: bold;
+            padding-left: 30px;
+            padding-right: 30px;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            width: 480px;
+            top: 0;
+            z-index: 1;
+            font-size: 16px;
+        }
+
+        .content {
+            margin-top: 90px;
+            padding: 30px;
+        }
+
+        input[type=button] {
+            font-family: 'Artifika';
+            font-weight: bold;
+            font-size: 13px;
+            /*! text-transform: uppercase; */
+            vertical-align: top;
+            height: 28px;
+            min-width: 120px;
+            padding: 0px 18px;
+            margin-right: 6px;
+            border-radius: 5px;
+            border: none;
+            color: #f3b773;
+            background-color: #f9ae2c;
+            background: linear-gradient(#844a08 20%, #442707 100%);
+            cursor: pointer;
+        }
+
+input[type=button].redwood {
+            }
+
+            input[type=button].shrub {
+               color: #1a3c06;
+                background-color: #afafaf;
+                background: linear-gradient(#6a7a54 20%, #284106 100%);
+            }
+
+            input[type=button].dahlia {
+                 color: #f893b6;
+                background-color: #94132e;
+                background: linear-gradient(#ef4868 20%, #50111e 100%);
+                
+            }
+
+            input[type=button].grass {
+                color: #7cf285;
+                background-color: #1080b8;
+                background: linear-gradient(#3bd853 20%, #06380b 100%);
+                
+            }
+
+            input[type=button]:enabled:hover {
+                background: linear-gradient(#9e620a, #513608);
+                border: none;
+            }
+input[type=button].redwood:enabled:hover {
+                background: linear-gradient(#9e620a, #513608);
+                border: none;
+            }
+
+            input[type=button].dahlia:enabled:hover {
+                background: linear-gradient(#f991a5, #721527);
+                border: none;
+            }
+
+            input[type=button].grass:enabled:hover {
+                background: linear-gradient(#76ea84, #3d7535);
+                border: none;
+            }
+
+            input[type=button].shrub:enabled:hover {
+                background: linear-gradient(#adcb8c, #4c663c);
+                border: none;
+            }
+
+            input[type=button]:active {
+                background: linear-gradient(#343434, #343434);
+            }
+
+            input[type=button].red:active {
+                background: linear-gradient(#94132e, #94132e);
+            }
+
+            input[type=button].blue:active {
+                background: linear-gradient(#1080b8, #1080b8);
+            }
+
+            input[type=button].white:active {
+                background: linear-gradient(#afafaf, #afafaf);
+            }
+
+            input[type=button]:disabled {
+                color: #252525;
+                background: linear-gradient(#575757 20%, #252525 100%);
+            }
+
+            input[type=button][pressed=pressed] {
+                color: #00b4ef;
+            }
+    
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <h4>Landscaping</h4>
+    </div>
+    <div class="content">
+        <h4>Welcome!</h4>
+        <p>Enhance your space with trees, flowers, shrubs, and grass.  Select a button to begin creating.</p>
+        <p><input value="Redwood" type="button"></p>
+        <p><input value="Shrub" class="shrub" type="button"></p>
+        <p><input value="Dahlia" class="dahlia" type="button"></p>
+        <p><input value="Grass" class="grass" type="button"></p>
+    </div>
+
+    <script src="landscaping_files/jquery.js"></script>
+    <script>
+            function main() {
+                console.log("ready");
+            }
+
+            $(document).ready(main);
+    </script>
+
+
+
+
+
+    <meta charset="utf-8">
+    <title></title>
+
+
+
+
+</body></html>
