@@ -149,16 +149,29 @@ input[type=button].redwood:enabled:hover {
         <p><input value="Dahlia" class="dahlia" type="button"></p>
         <p><input value="Grass" class="grass" type="button"></p>
     </div>
-
-    <script src="landscaping_files/jquery.js"></script>
-    <script>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>
             function main() {
-                console.log("ready");
+                // Send an event to landscape.js when the page loads and is ready to get things rolling
+                console.log("document ready");
+                var readyEvent = {
+                    "type": "ready",
+                };
+                // The event bridge handles event represented as a string the best. So here we first create a Javascript object, then convert to stirng
+                EventBridge.emitWebEvent(JSON.stringify(readyEvent));
+                // Send an event when user click on each of the landscape buttons
+                $(".landscape-button").click(function(){
+                    console.log(this.value + " button click");
+                    var clickEvent = {
+                        "type": "click",
+                        "data": this.value
+                    };
+                    EventBridge.emitWebEvent(JSON.stringify(clickEvent));
+                });
             }
-
             $(document).ready(main);
-    </script>
-
+        </script>
 
 
 
