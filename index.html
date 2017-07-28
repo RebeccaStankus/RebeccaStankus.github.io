@@ -63,7 +63,10 @@ body {
             cursor: pointer;
         }
 
-input[type=button].redwood {
+input[type=button].oak {
+    color: #f3b773;
+                background-color: #afafaf;
+                background: linear-gradient(#844a08 20%, #442707 100%);
             }
 
             input[type=button].shrub {
@@ -90,7 +93,8 @@ input[type=button].redwood {
                 background: linear-gradient(#9e620a, #513608);
                 border: none;
             }
-input[type=button].redwood:enabled:hover {
+        
+        input[type=button].oak:enabled:hover {
                 background: linear-gradient(#9e620a, #513608);
                 border: none;
             }
@@ -114,18 +118,6 @@ input[type=button].redwood:enabled:hover {
                 background: linear-gradient(#343434, #343434);
             }
 
-            input[type=button].red:active {
-                background: linear-gradient(#94132e, #94132e);
-            }
-
-            input[type=button].blue:active {
-                background: linear-gradient(#1080b8, #1080b8);
-            }
-
-            input[type=button].white:active {
-                background: linear-gradient(#afafaf, #afafaf);
-            }
-
             input[type=button]:disabled {
                 color: #252525;
                 background: linear-gradient(#575757 20%, #252525 100%);
@@ -144,10 +136,10 @@ input[type=button].redwood:enabled:hover {
     <div class="content">
         <h4>Welcome!</h4>
         <p>Enhance your space with trees, flowers, shrubs, and grass.  Select a button to begin creating.</p>
-        <p><input value="Redwood" type="button"></p>
-        <p><input value="Shrub" class="shrub" type="button"></p>
-        <p><input value="Dahlia" class="dahlia" type="button"></p>
-        <p><input value="Grass" class="grass" type="button"></p>
+        <p><input type="button" class="landscape-button oak" value="Oak"></p>
+        <p><input type="button" class="landscape-button shrub" value="Shrub"></p>
+        <p><input type="button" class="landscape-button dahlia" value="Dahlia"></p>
+        <p><input type="button" class="landscape-button grass" value="Grass"></p>
     </div>
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -172,9 +164,6 @@ input[type=button].redwood:enabled:hover {
             }
             $(document).ready(main);
         </script>
-
-
-
 
     <meta charset="utf-8">
     <title></title>
